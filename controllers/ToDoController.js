@@ -11,6 +11,6 @@ module.exports.saveToDo = async (req, res) => {
 	ToDoModel.create({ text }).then((data) => {
 		console.log("added successfully...");
 		console.log(data);
-		res.send(toDo);
+		res.send(data);
 	});
 };
