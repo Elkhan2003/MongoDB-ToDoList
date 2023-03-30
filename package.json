@@ -4,8 +4,7 @@
 	"main": "Server.js",
 	"license": "MIT",
 	"scripts": {
-		"dev": "nodemon Server.js",
-		"build": "next build"
+		"dev": "nodemon Server.js"
 	},
 	"dependencies": {
 		"cors": "^2.8.5",
