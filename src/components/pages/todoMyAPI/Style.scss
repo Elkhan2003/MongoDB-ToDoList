@@ -1,0 +1,124 @@
+.completed {
+	text-decoration: line-through;
+	color: gray;
+}
+
+.my__api__content {
+	display: flex;
+	justify-content: center;
+}
+
+.my-api-container {
+	width: 600px;
+	background-color: #4b0082;
+	border-radius: 5px;
+	padding: 20px;
+	color: #fff;
+	font-family: Arial, sans-serif;
+
+	h1 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.add__task {
+		display: flex;
+		justify-content: space-around;
+
+		input {
+			width: 100%;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			font-weight: 600;
+
+			&::placeholder {
+				font-size: 15px;
+				font-weight: 500;
+			}
+		}
+
+		button {
+			font-weight: 600;
+			margin-left: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			background-color: #fff;
+			display: block;
+		}
+	}
+
+	.users {
+		.user {
+			background-color: #fff;
+			padding: 5px;
+			border-radius: 5px;
+			margin: 15px 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.user__change__form {
+				width: 100%;
+
+				form {
+					input {
+						padding: 3px 3px;
+						width: 100%;
+						border: 1px solid purple;
+						box-shadow: 0px 0px 3px purple;
+						border-radius: 5px;
+						font-size: 16px;
+						font-weight: 600;
+
+						&::placeholder {
+							font-size: 15px;
+							font-weight: 500;
+						}
+
+						&:focus {
+							outline: none;
+						}
+					}
+				}
+			}
+
+			p {
+				color: #000000;
+				margin: 0;
+				font-weight: 600;
+			}
+
+			.buttons {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+
+				button {
+					padding: 5px;
+					border: none;
+					border-radius: 5px;
+					cursor: pointer;
+					background-color: #4b0082;
+					border: 1px solid transparent;
+					color: #fff;
+					margin-left: 10px;
+
+					&.completed {
+						font-weight: 500;
+						text-decoration: none;
+						background-color: #fff;
+						border: 1px solid #4b0082;
+						color: #4b0082;
+					}
+				}
+			}
+		}
+	}
+}
