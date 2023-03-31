@@ -5,7 +5,7 @@ const todoSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
-	complated: {
+	completed: { // исправлено
 		type: Boolean,
 		required: true
 	}

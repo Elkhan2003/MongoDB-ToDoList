@@ -6,9 +6,9 @@ module.exports.getToDo = async (req, res) => {
 };
 
 module.exports.saveToDo = (req, res) => {
-	const { task, complated } = req.body;
+	const { task, completed } = req.body;
 
-	ToDoModel.create({ task, complated })
+	ToDoModel.create({ task, completed })
 		.then((data) => {
 			console.log("Added Successfully...");
 			console.log(data);
@@ -28,9 +28,9 @@ module.exports.deleteToDo = (req, res) => {
 };
 
 module.exports.updateToDo = (req, res) => {
-	const { _id, task, complated } = req.body;
+	const { _id, task, completed } = req.body;
 
-	ToDoModel.findByIdAndUpdate(_id, { task, complated })
+	ToDoModel.findByIdAndUpdate(_id, { task, completed })
 		.then(() => res.set(201).send("Updated Successfully..."))
 		.catch((err) => console.log(err));
 };
